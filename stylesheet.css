@@ -65,7 +65,7 @@ h1, h2, p{
 /* Project card */
 .project-card {
     width: 700px;
-    background-color: #eaeaea;
+    background-color: dimgray;
     border-radius: 14px;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
@@ -74,8 +74,8 @@ h1, h2, p{
 
 /* Groene titelbalk */
 .project-title {
-    background-color: #2ecc71;
-    color: white;
+    background-color: darkslategray;
+    color:  #D7C78B;
     padding: 14px;
     text-align: center;
     font-weight: bold;
