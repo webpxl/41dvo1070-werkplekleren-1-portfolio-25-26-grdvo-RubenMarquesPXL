@@ -100,3 +100,89 @@ h1, h2, p{
     font-size: 14px;
     margin: 0;
 }
+
+/* Container voor hele sectie */
+.about-section-container {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+
+.title-box {
+    display: inline-block;
+    background-color:darkslategray;
+    color: white;
+    padding: 16px 32px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 12px;
+    position: relative;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+.title-box::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    border: 5px solid #D7C78B;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+/* Tekst links + foto rechts */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Tekst */
+.about-text {
+    flex: 1;
+}
+
+.nospace {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Contact knop */
+.contact-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 22px;
+    background-color:darkslategray;
+    color: #D7C78B;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #27ae60;
+}
+
+/* Foto rechts */
+.about-image {
+    flex: 0 0 260px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 350px;
+    height: auto;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
