@@ -53,4 +53,50 @@ h1, h2, p{
     background-color: rgba(255, 255, 255, 0.25);
 }
 
+/* Container voor alle projecten */
+.projects-container {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    padding: 40px;
+    flex-wrap: wrap; /* voor mobiel */
+}
 
+/* Project card */
+.project-card {
+    width: 700px;
+    background-color: #eaeaea;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    font-family: Arial, sans-serif;
+}
+
+/* Groene titelbalk */
+.project-title {
+    background-color: #2ecc71;
+    color: white;
+    padding: 14px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Inhoud */
+.project-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.dashboard-img {
+    width: 550px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 14px;
+}
+
+.project-content p {
+    color: #333;
+    font-size: 14px;
+    margin: 0;
+}
