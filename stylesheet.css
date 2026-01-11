@@ -196,7 +196,6 @@ h1, h2, p{
     font-family: Arial, sans-serif;
 }
 
-/* Titel groen kader met gouden rand, passend bij thema */
 .contact-title {
     display: inline-block;
     background-color: darkslategray;
@@ -221,7 +220,6 @@ h1, h2, p{
     pointer-events: none;
 }
 
-/* Card met grijze achtergrond */
 .contact-card {
     background-color:gray;
     padding: 28px 24px;
@@ -231,7 +229,7 @@ h1, h2, p{
     line-height: 1.8;
 }
 
-/* Links mooi groen bij hover */
+
 .contact-card a {
     color:black;
     text-decoration: none;
@@ -242,7 +240,7 @@ h1, h2, p{
     text-decoration: underline;
 }
 
-/* Stuur een bericht knop */
+
 .contact-button {
     display: inline-block;
     margin-top: 20px;
@@ -257,4 +255,37 @@ h1, h2, p{
 
 .contact-button:hover {
     background-color: #27ae60;
+}
+
+/* Fullscreen sectie voor de quote */
+.quote-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* vult hele scherm */
+    background-color: darkslategray;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+.quote-text {
+    font-size: 3vw; /* past automatisch aan schermgrootte */
+    color:#D7C78B;
+    font-weight: bold;
+    border: 20px solid #D7C78B;
+    border-radius: 12px;
+    padding: 40px 60px;
+    line-height: 1.4;
+    max-width: 80%;
+}
+
+/* Responsief: kleine schermen */
+@media (max-width: 768px) {
+    .quote-text {
+        font-size: 6vw;
+        padding: 30px 20px;
+    }
 }
