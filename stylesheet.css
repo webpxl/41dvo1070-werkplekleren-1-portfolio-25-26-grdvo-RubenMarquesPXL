@@ -186,3 +186,75 @@ h1, h2, p{
     border-radius: 14px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
+
+/* Contact */
+.contact-section {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Titel groen kader met gouden rand, passend bij thema */
+.contact-title {
+    display: inline-block;
+    background-color: darkslategray;
+    color: #D7C78B;
+    padding: 16px 32px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 12px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.contact-title::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    border:5px solid #D7C78B;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+/* Card met grijze achtergrond */
+.contact-card {
+    background-color:gray;
+    padding: 28px 24px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    text-align: left;
+    line-height: 1.8;
+}
+
+/* Links mooi groen bij hover */
+.contact-card a {
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+/* Stuur een bericht knop */
+.contact-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 22px;
+    background-color:darkslategray;
+    color:white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #27ae60;
+}
