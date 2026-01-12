@@ -289,3 +289,57 @@ h1, h2, p{
         padding: 30px 20px;
     }
 }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.projects-container {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    padding: 40px 20px;
+    flex-wrap: wrap; /* belangrijk */
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-top: 20px;
+    }
+}
+
+.navbar {
+    flex-wrap: wrap;
+}
+
+.nav-links {
+    gap: 16px;
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+.quote-section {
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
