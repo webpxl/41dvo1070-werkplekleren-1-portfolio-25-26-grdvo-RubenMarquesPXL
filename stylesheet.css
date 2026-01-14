@@ -534,5 +534,120 @@ input {
     }
 }
 
+.games-roadmap {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Titel */
+.roadmap-title {
+    color: #D7C78B;
+    text-align: center;
+    background-color: darkslategray;
+    padding: 16px 32px;
+    border-radius: 12px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.roadmap-title::before {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    border: 6px solid #D7C78B;
+    border-radius: 8px;
+}
+
+/* Timeline lijn */
+.timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 35px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #D7C78B;
+    border-radius: 2px;
+}
+
+/* Item */
+.timeline-item {
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+/* Punt op de lijn */
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: 27px;
+    top: 40px;
+    width: 20px;
+    height: 20px;
+    background-color: darkslategray;
+    border: 3px solid #D7C78B;
+    border-radius: 50%;
+}
+
+/* Afbeelding */
+.timeline-item img {
+    width: 450px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    margin-left: 80px;
+}
+
+/* Tekstblok */
+.timeline-content {
+    background-color: #eaeaea;
+    padding: 20px;
+    border-radius: 14px;
+    max-width: 500px;
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    color: black;
+}
+
+.timeline-content span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Mobiel */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 10px;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        margin-left: 30px;
+    }
+
+    .timeline-item::before {
+        left: 2px;
+    }
+
+    .timeline-item img {
+        margin-left: 0;
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
 
 
