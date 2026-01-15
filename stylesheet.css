@@ -53,16 +53,14 @@ h1, h2, p{
     background-color: rgba(255, 255, 255, 0.25);
 }
 
-/* Container voor alle projecten */
 .projects-container {
     display: flex;
     gap: 24px;
     justify-content: center;
     padding: 40px;
-    flex-wrap: wrap; /* voor mobiel */
+    flex-wrap: wrap;
 }
 
-/* Project card */
 .project-card {
     width: 700px;
     background-color: dimgray;
@@ -72,7 +70,6 @@ h1, h2, p{
     font-family: Arial, sans-serif;
 }
 
-/* Groene titelbalk */
 .project-title {
     background-color: darkslategray;
     color:  #D7C78B;
@@ -136,7 +133,6 @@ h1, h2, p{
     pointer-events: none;
 }
 
-/* Tekst links + foto rechts */
 .about-section {
     display: flex;
     align-items: center;
@@ -156,7 +152,6 @@ h1, h2, p{
     color: #333;
 }
 
-/* Contact knop */
 .contact-button {
     display: inline-block;
     margin-top: 20px;
@@ -257,7 +252,6 @@ h1, h2, p{
     background-color: #27ae60;
 }
 
-/* Fullscreen sectie voor de quote */
 .quote-section {
     display: flex;
     justify-content: center;
@@ -272,7 +266,7 @@ h1, h2, p{
 
 
 .quote-text {
-    font-size: 3vw; /* past automatisch aan schermgrootte */
+    font-size: 3vw;
     color:#D7C78B;
     font-weight: bold;
     border: 20px solid #D7C78B;
@@ -282,7 +276,6 @@ h1, h2, p{
     max-width: 80%;
 }
 
-/* Responsief: kleine schermen */
 @media (max-width: 768px) {
     .quote-text {
         font-size: 6vw;
@@ -343,7 +336,6 @@ img {
     height: auto;
 }
 
-/* basis */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -353,7 +345,6 @@ input {
     display: none;
 }
 
-/* slider */
 .project-slider {
     position: relative;
     height: 100vh;
@@ -361,14 +352,12 @@ input {
     background-color: whitesmoke;
 }
 
-/* slides wrapper */
 .slides {
     display: flex;
     height: 100%;
     transition: transform 0.6s ease;
 }
 
-/* individuele slide */
 .slide {
     min-width: 100%;
     padding: 60px;
@@ -376,7 +365,6 @@ input {
     color: white;
 }
 
-/* titel */
 .slide-title {
     color: #D7C78B;
     text-align: center;
@@ -387,7 +375,6 @@ input {
     position: relative;
 }
 
-/* gouden rand binnenin */
 .slide-title::before {
     content: "";
     position: absolute;
@@ -396,7 +383,6 @@ input {
     border-radius: 8px;
 }
 
-/* inhoud */
 .slide-content {
     display: flex;
     align-items: center;
@@ -405,14 +391,12 @@ input {
     margin: auto;
 }
 
-/* afbeelding links */
 .slide-content img {
     width: 700px;
     border-radius: 14px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
-/* tekst rechts */
 .slide-content p {
     background-color: rgba(255,255,255,0.15);
     padding: 24px;
@@ -420,7 +404,6 @@ input {
     line-height: 1.6;
 }
 
-/* pijlen */
 .arrows label {
     position: absolute;
     top: 50%;
@@ -435,12 +418,11 @@ input {
 .left { left: 30px; }
 .right { right: 30px; }
 
-/* slide logic */
+
 #proj1:checked ~ .slides { transform: translateX(0); }
 #proj2:checked ~ .slides { transform: translateX(-100%); }
 #proj3:checked ~ .slides { transform: translateX(-200%); }
 
-/* juiste pijlen tonen */
 #proj1:checked ~ .arrows label:nth-child(1),
 #proj2:checked ~ .arrows label:nth-child(2),
 #proj3:checked ~ .arrows label:nth-child(3),
@@ -450,7 +432,6 @@ input {
     display: block;
 }
 
-/* mobiel */
 @media (max-width: 768px) {
     .slide-content {
         flex-direction: column;
@@ -472,14 +453,12 @@ input {
     font-family: Arial, sans-serif;
 }
 
-/* Track die automatisch schuift */
 .quote-track {
     display: flex;
     width: 300%;
     animation: slideQuotes 15s infinite;
 }
 
-/* Individuele quote */
 .quote {
     width: 100%;
     min-width: 100%;
@@ -493,7 +472,6 @@ input {
     box-sizing: border-box;
 }
 
-/* Quote tekst */
 .quote p {
     color: #D7C78B;
     font-size: 3vw;
@@ -505,14 +483,12 @@ input {
     line-height: 1.4;
 }
 
-/* Auteur */
 .quote span {
     margin-top: 20px;
     font-size: 18px;
     opacity: 0.9;
 }
 
-/* Animatie */
 @keyframes slideQuotes {
     0%   { transform: translateX(0); }
     30%  { transform: translateX(0); }
@@ -526,7 +502,6 @@ input {
     100% { transform: translateX(0); }
 }
 
-/* Mobiel */
 @media (max-width: 768px) {
     .quote p {
         font-size: 6vw;
@@ -541,7 +516,6 @@ input {
     font-family: Arial, sans-serif;
 }
 
-/* Titel */
 .roadmap-title {
     color: #D7C78B;
     text-align: center;
@@ -560,7 +534,6 @@ input {
     border-radius: 8px;
 }
 
-/* Timeline lijn */
 .timeline {
     position: relative;
     display: flex;
@@ -579,14 +552,12 @@ input {
     border-radius: 2px;
 }
 
-/* Item */
 .timeline-item {
     display: flex;
     gap: 30px;
     position: relative;
 }
 
-/* Punt op de lijn */
 .timeline-item::before {
     content: "";
     position: absolute;
@@ -599,7 +570,6 @@ input {
     border-radius: 50%;
 }
 
-/* Afbeelding */
 .timeline-item img {
     width: 450px;
     height: auto;
@@ -608,7 +578,6 @@ input {
     margin-left: 80px;
 }
 
-/* Tekstblok */
 .timeline-content {
     background-color: #eaeaea;
     padding: 20px;
@@ -627,7 +596,6 @@ input {
     font-weight: bold;
 }
 
-/* Mobiel */
 @media (max-width: 768px) {
     .timeline::before {
         left: 10px;
@@ -656,7 +624,6 @@ body {
     color: #333;
 }
 
-/* Download knop */
 .download-wrapper {
     background-color: darkslategray;
     padding: 20px;
@@ -677,6 +644,7 @@ body {
 .download-btn:hover {
     background-color: darkslategray;
     color: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 /.olr-section {
@@ -686,7 +654,6 @@ body {
      font-family: Arial, sans-serif;
  }
 
-/* Titel */
 .olr-title {
     text-align: center;
     background-color: darkslategray;
@@ -714,7 +681,6 @@ body {
     position: relative;
 }
 
-/* Gouden rand rond HEEL het deel */
 .olr-wrapper::before {
     content: "";
     position: absolute;
@@ -723,7 +689,6 @@ body {
     border-radius: 16px;
 }
 
-/* Hoofdtitel van het deel */
 .olr-main-title {
     text-align: center;
     background-color: darkslategray;
@@ -735,7 +700,6 @@ body {
     z-index: 1;
 }
 
-/* Inhoud */
 .olr-content {
     display: flex;
     flex-direction: column;
@@ -744,7 +708,6 @@ body {
     z-index: 1;
 }
 
-/* Subblokken */
 .olr-block {
     background-color: #eaeaea;
     padding: 24px;
@@ -766,7 +729,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* Mobiel */
 @media (max-width: 768px) {
     .olr-wrapper {
         padding: 20px;
@@ -791,7 +753,6 @@ body {
     position: relative;
 }
 
-/* Gouden rand rondom het hele deel */
 .reflection-section::before {
     content: "";
     position: absolute;
@@ -800,7 +761,6 @@ body {
     border-radius: 18px;
 }
 
-/* Titel */
 .reflection-title {
     text-align: center;
     background-color: darkslategray;
@@ -812,7 +772,6 @@ body {
     z-index: 1;
 }
 
-/* Subblokken */
 .reflection-block {
     background-color: #eaeaea;
     padding: 24px;
@@ -833,7 +792,6 @@ body {
     margin-bottom: 0;
 }
 
-/* Mobiel */
 @media (max-width: 768px) {
     .reflection-section {
         padding: 20px;
@@ -863,7 +821,6 @@ body {
     position: relative;
 }
 
-/* Gouden rand rondom het deel */
 .reflection-section::before {
     content: "";
     position: absolute;
@@ -872,7 +829,6 @@ body {
     border-radius: 18px;
 }
 
-/* Titel */
 .reflection-title {
     text-align: center;
     background-color: darkslategray;
@@ -884,7 +840,7 @@ body {
     z-index: 1;
 }
 
-/* Blokken */
+
 .reflection-block {
     background-color: #eaeaea;
     padding: 24px;
@@ -936,7 +892,6 @@ body {
     position: relative;
 }
 
-/* Gouden rand */
 .reflection-section::before {
     content: "";
     position: absolute;
@@ -945,7 +900,6 @@ body {
     border-radius: 18px;
 }
 
-/* Titel */
 .reflection-title {
     text-align: center;
     background-color: darkslategray;
@@ -957,7 +911,6 @@ body {
     z-index: 1;
 }
 
-/* Blok met afbeelding en tekst */
 .reflection-block {
     background-color: #eaeaea;
     padding: 24px;
@@ -970,7 +923,6 @@ body {
     align-items: flex-start;
 }
 
-/* Afbeelding */
 .reflection-img {
     width: 1000px;
     border-radius: 12px;
@@ -989,7 +941,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Mobiel */
 @media (max-width: 768px) {
     .reflection-block {
         flex-direction: column;
@@ -1045,7 +996,6 @@ body {
     color: #333;
 }
 
-/* Mobiel */
 @media (max-width: 768px) {
     .xfactor-section {
         padding: 20px;
@@ -1066,5 +1016,89 @@ body {
         font-size: 15px;
     }
 }
+
+.site-footer {
+    background-color: darkslategray;
+    margin-top: 100px;
+    padding: 30px 20px;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+.footer-content p,
+.footer-content a {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    font-size: 14px;
+}
+
+.privacy-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.privacy-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+}
+
+.privacy-section {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    border: 3px solid #d4af37;
+}
+
+.privacy-title {
+    text-align: center;
+    background-color: #2ecc71;
+    color: white;
+    padding: 20px;
+    border-radius: 14px;
+    margin-bottom: 40px;
+}
+
+.privacy-content h2 {
+    color: #2ecc71;
+    margin-top: 30px;
+}
+
+.privacy-content p {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Mobiel */
+@media (max-width: 768px) {
+    .privacy-section {
+        margin: 50px 10px;
+        padding: 20px;
+    }
+
+    .privacy-title {
+        font-size: 22px;
+    }
+}
+
+
 
 
